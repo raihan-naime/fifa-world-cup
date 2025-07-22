@@ -14,20 +14,51 @@
     />
 
     <!-- font awesome kit -->
-     <script src="https://kit.fontawesome.com/660f7ab8c8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/660f7ab8c8.js"
+      crossorigin="anonymous"
+    ></script>
 
-     <!-- tailwind cdn link -->
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <style>
-      .poppins {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css" />
+
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="banner-container">
+
+        <!-- banner content -->
+        <div class="banner-left">
+          <h1 class="banner-title">The Greatest show on the earth</h1>
+          <p class="banner-description">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+          <button class="btn-primary">Watch Live</button>
+        </div>
+
+        <!-- banner image -->
+            <img src="assets/img/banner/banner-img.png" alt="">
+         
+    </header>
+    <main>
+      <!-- watch match -->
+       <section class="live-game-section">
+
+        <div class="live-game-left">
+          <button class="btn-primary">Upcoming Match</button>
+          <button class="btn-primary">All Group</button>
+          <button class="btn-primary">Blog</button>
+        </div>
+
+        <div class="live-game-right">
+           <p>Live game</p>
+        </div>
+       </section>
+    </main>
     <footer></footer>
   </body>
 </html>

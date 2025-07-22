@@ -1,0 +1,94 @@
+/* common styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.btn-primary {
+  color: white;
+  border-radius: 5px;
+  background-color: #dd0000;
+  padding: 16px 25px;
+}
+header,
+main {
+  max-width: 1420px;
+}
+
+/* header styles */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161616;
+  color: white;
+  align-items: center;
+  gap: 80px;
+  padding-top: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+.banner-left {
+  margin-left: 120px;
+}
+.banner-title {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+.banner-description {
+  margin-bottom: 20px;
+}
+.banner-right img {
+  display: block;
+}
+
+/* live game section styles */
+.live-game-section {
+  display: none;
+}
+
+
+
+
+
+/* responsive styles for tablet */
+@media (min-width: 576px) and (max-width: 992px){
+    .banner-title {
+    font-size: 50px;
+    line-height: 50px
+  }
+  .banner-container img{
+    display: block;
+    height: 340px;
+    width: 323px;
+  }
+  .banner-left {
+    margin-left: 20px;
+  }
+}
+
+
+/* responsive styles for mobile*/
+@media (max-width: 576px) {
+  .banner-container {
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 95%;
+    padding: 20px 20px 0 20px;
+  }
+  .banner-left {
+    margin-left: 0px;
+  }
+  .banner-title {
+    font-size: 50px;
+  }
+  /* .banner-container img{
+    height: 100%;
+  } */
+}
+
+
+
