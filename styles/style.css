@@ -112,12 +112,33 @@ main {
   color: #161616;
 }
 
-
+/* footer styles */
+footer {
+  background-color: #161616;
+  text-align: center;
+  height: 450px;
+}
+footer h3 {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+li a {
+  color: #b9b9b9;
+}
 
 /* responsive styles for tablet */
 @media (min-width: 576px) and (max-width: 992px) {
   header,
   main {
+    max-width: 780px;
     margin: 50px auto;
   }
 
@@ -142,11 +163,13 @@ main {
     gap: 30px;
   }
   .live-game-left {
-    width: 90%;
+    width: 100%;
     flex-direction: row;
     background-color: transparent;
     border-radius: 10px;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
   }
 
   .live-game-left .btn-primary:nth-child(1),
@@ -158,24 +181,30 @@ main {
     flex: 1;
   }
 
-
   /* right side */
   .live-game-right {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 56px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px;
+  }
+
+    footer h3 {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 }
-
-
-
 
 /* responsive styles for mobile*/
 @media (max-width: 576px) {
+  header,
+  main {
+    max-width: 540px;
+    margin: 0px auto;
+  }
   .banner-container {
     flex-direction: column;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 5px;
-    width: 95%;
+    /* width: 95%; */
     padding: 20px 20px 0 20px;
   }
   .banner-left {
@@ -187,9 +216,9 @@ main {
 
   /* live section */
   .live-game-section {
-  flex-direction: column;
-  /* gap: 55px; */
-}
+    flex-direction: column;
+    /* gap: 55px; */
+  }
   .live-game-left {
     width: 90%;
     flex-direction: column;
@@ -203,11 +232,18 @@ main {
   }
 
   .live-game-right {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 56px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 56px;
+  }
+  .live-game-left {
+    padding: 0;
+    margin: 0 auto;
+  }
+  footer h3 {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
-.live-game-left {
-  padding: 0;
-  margin: 0 auto;
+  footer ul {
+  flex-direction: column;
 }
 }
