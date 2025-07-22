@@ -20,6 +20,39 @@ main,
   margin: 100px auto;
 }
 
+/* animations */
+@keyframes banner-animation {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+
+/* not working at all but i don't know why */
+@keyframes banner-player-animation {
+  0% {
+    opacity: 0.3;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 /* header styles */
 .banner-container {
   display: flex;
@@ -31,6 +64,8 @@ main,
   padding-top: 30px;
   margin: 30px auto;
   border-radius: 15px;
+
+  animation: banner-animation 0.7s ease-out forwards;
 }
 .banner-left {
   margin-left: 120px;
@@ -46,6 +81,7 @@ main,
 }
 .banner-right img {
   display: block;
+  animation: banner-player-animation 1s ease-in infinite;
 }
 
 /* live game section styles */
